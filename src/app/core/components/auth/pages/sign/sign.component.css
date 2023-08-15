@@ -1,0 +1,54 @@
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label, form input{
+  width: 100%;
+}
+
+form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--preto);
+}
+
+form label svg{
+  width: 30px;
+}
+
+form label input{
+  height: 50px;
+  border: none;
+  font-size: 18px;
+
+}
+
+form label input::placeholder{
+  color: var(--preto);
+}
+
+.btn-vermelho{
+  width: 100%;
+  height: 60px;
+  margin: 25px 0 0;
+  border-radius: 10px;
+  background: var(--vermelho);
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-vermelho:disabled{
+  cursor: no-drop;
+  background: rgba(221, 3, 48, 0.8);
+}
+
+.msg-error{
+  padding: 10px 0;
+  color: var(--vermelho);
+  font-size: 18px;
+}
